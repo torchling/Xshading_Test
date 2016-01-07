@@ -280,3 +280,12 @@
 	<GL\glut.h>
 	<math.h>
 
+1451499340 source:c:\users\user\documents\github\xshading_test\main.cpp
+	<windows.h>
+	<GL/glut.h>
+	<vector>
+	<stdlib.h>
+	<stdio.h>
+	<GL\glut.h>
+	<math.h>
+

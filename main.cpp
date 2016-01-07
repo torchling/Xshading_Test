@@ -44,43 +44,6 @@ struct cubecolor{
 cubecolor now    = { 1.0f , 1.0f , 1.0f };
 cubecolor prenow = { 0.5f , 0.5f , 0.5f };
 
-cubecolor becomeYellow()
-{
-    cubecolor temp = { 1.0f , 1.0f , 0.0f };
-    return temp;
-}
-
-cubecolor becomeRed()
-{
-    cubecolor temp = { 1.0f , 0.0f , 0.0f };
-    return temp;
-}
-
-cubecolor becomeBlue()
-{
-    cubecolor temp = { 0.0f , 0.0f , 1.0f };
-    return temp;
-}
-
-cubecolor becomeGreen()
-{
-    cubecolor temp = { 0.0f , 1.0f , 0.0f };
-    return temp;
-}
-
-cubecolor becomeOrange()
-{
-    cubecolor temp = { 1.0f , 0.5f , 0.0f };
-    return temp;
-}
-
-cubecolor becomeWhite()
-{
-    cubecolor temp = { 1.0f , 1.0f , 1.0f };
-    return temp;
-}
-
-
 
 void myKeys(unsigned char key, int x, int y)
 {
@@ -184,29 +147,6 @@ void myKeys(unsigned char key, int x, int y)
             cubenumber[yArray][xArray*45+zArray]=0;
             break;
 
-        case '1':
-            now = becomeRed();
-            break;
-
-        case '2':
-            now = becomeOrange();
-            break;
-
-        case '3':
-            now = becomeYellow();
-            break;
-
-        case '4':
-            now = becomeGreen();
-            break;
-
-        case '5':
-            now = becomeBlue();
-            break;
-
-        case '6':
-            now = becomeWhite();
-            break;
     }
     glutPostRedisplay();
 }
